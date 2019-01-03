@@ -63,11 +63,10 @@ export default [
         path: 'media_capital_management',
         name: 'media_capital_management',
         meta: {
-          //access: ['super_admin'], // 权限控制<Array>，包含可访问该页面的用户权限
           icon: 'arrow-graph-up-right',
           title: '二级-2'
         },
-        component: parentView, // 如果该路由不是页面，而是二级即更多级目录，需要用parentView组件
+        component: parentView,
         children: [
           {
             path: 'media_pool',
@@ -86,14 +85,14 @@ export default [
               title: '三级'
             },
             component: () => import('@/view/media-capital/media-capital-management/media-audit.vue')
-          },
+          }
         ]
       },
       {
         path: 'distribution_management',
         name: 'distribution_management',
         meta: {
-          //access: ['super_admin'], // 权限控制<Array>，包含可访问该页面的用户权限
+          // access: ['super_admin'], // 权限控制<Array>，包含可访问该页面的用户权限
           icon: 'arrow-graph-up-right',
           title: '二级-2'
         },
@@ -116,7 +115,7 @@ export default [
               title: '三级'
             },
             component: () => import('@/view/media-capital/distribution-management/distribution-task.vue')
-          },
+          }
         ]
       }
     ]

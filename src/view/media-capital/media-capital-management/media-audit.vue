@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-  name: 'level_2_2_2',
+  name: 'media-audit',
   data () {
     return {
       val: ''

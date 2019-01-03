@@ -1,11 +1,11 @@
 <template>
-    
+  <div></div>
 </template>
 
 <script>
-    export default {
-        name: "distribution-node"
-    }
+export default {
+  name: 'distribution-node'
+}
 </script>
 
 <style scoped>
